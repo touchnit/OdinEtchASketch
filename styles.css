@@ -1,0 +1,24 @@
+:root{
+    
+}
+
+
+#container
+{
+    width:100%;
+    margin:5px;
+    justify-content:flex-end;
+    align-items:flex-start;
+    flex-direction:row;
+}
+
+.gridDiv{
+    display:inline-flex;
+    flex-grow:1;
+    width:25%;
+    padding-top:25%;
+    border:1px solid black;
+    box-sizing:border-box;
+    text-align:center;
+    vertical-align:middle;
+}
