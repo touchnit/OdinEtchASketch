@@ -1,24 +1,51 @@
 :root{
-    
+   --grid-width:25%; 
 }
 
-
+#bigcont
+{
+    width:600px;
+}
 #container
 {
     width:100%;
-    margin:5px;
     justify-content:flex-end;
-    align-items:flex-start;
+    align-items:stretch;
     flex-direction:row;
 }
 
-.gridDiv{
+.gridDiv
+{
     display:inline-flex;
     flex-grow:1;
-    width:25%;
-    padding-top:25%;
+    width:var(--grid-width);
+    padding-top:var(--grid-width);
     border:1px solid black;
     box-sizing:border-box;
     text-align:center;
     vertical-align:middle;
+}
+
+.gridHovered{
+    background-color:grey;
+}
+
+#buttonsContainer{
+    width:100%;
+    display:inline-flex;
+    justify-content:center;
+}
+
+#buttonsContainer button{
+    text-align:center;
+    border:1px solid black;
+    margin:1em;
+    padding:0.3em;
+    border-radius:1em;
+}
+
+#buttonsContainer button:hover{
+background-color:black;
+    color:white;
+    
 }
